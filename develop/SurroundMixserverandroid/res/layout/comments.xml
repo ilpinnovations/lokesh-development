@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:divider="@color/list_divider"
+        android:dividerHeight="3dp"
+        android:listSelector="@drawable/list_row_selector" />
+
+
+    <com.android.volley.toolbox.NetworkImageView
+       android:id="@+id/thumbnail"
+       android:layout_width="80px"
+        android:layout_height="80px"
+        android:layout_marginTop="10px"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20px"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="8dp" />
+    
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="14dp"
+        android:textColor="#000000"
+        android:text="Address:" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="14dp"
+        android:textColor="#838B8B"
+        android:textSize="25px"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:background="#838B8B"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="25px"
+        android:padding="20px"
+        android:layout_marginTop="40px"
+        android:layout_below="@+id/textView4"
+        android:text="Comments" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:text="TextView" />
+
+</RelativeLayout>
